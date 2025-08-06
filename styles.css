@@ -12,6 +12,8 @@ html{
 body{
     line-height: 1.5;
     color: #333;
+    background: linear-gradient(145deg, rgba(255, 255, 255, 0.945) 0%, rgb(200, 228, 242) 100%);
+    position: relative;
 }
 
 .navbar{
@@ -98,8 +100,7 @@ body{
     display: flex;
     align-items: center;
     justify-content: center;
-    padding: 100px 0 50px;
-    background: linear-gradient(145deg, rgba(227, 227, 227, 0.945) 0%, rgb(200, 228, 242) 100%);
+    padding: 5% 10% 5% 10%;
     color: white;
     position: relative;
 }
@@ -220,6 +221,79 @@ body{
     border-bottom-right-radius: 30%;
     border-top-left-radius: 30%;
     border: 2px solid white;
+}
+
+.about {
+    padding: 5% 10% 5% 10%;
+}
+
+.about_container {
+    display: flex;
+    gap: 4rem;
+    max-width: 100%;
+    margin: 0 auto;
+
+    @media (min-width: 768px) {
+        flex-direction: row;
+        justify-content: space-between;
+    }
+}
+
+.about_box, .edu_box {
+    background-color: #ffffff;
+    box-shadow: 0 4px 12px rgba(0, 0, 0, 0.1);
+    padding: 1.5rem;
+    border-radius: 10px;
+    transition: 0.3s ease;
+}
+
+.about_box:hover, .edu_box:hover {
+    transform: translateY(-4px);
+    box-shadow: 0 8px 18px rgba(0, 0, 0, 0.15);
+}
+
+.about_left {
+    flex: 2;
+}
+
+.section_title {
+    font-size: 1.8rem;
+    margin-bottom: 1rem;
+    color: #486a8d;
+}
+
+.about_intro {
+    font-size: 1.1rem;
+    line-height: 2;
+    text-align: justify;
+}
+
+.about_right {
+    flex: 1;
+    display: flex;
+    flex-direction: column;
+    gap: 1.5rem;
+}
+
+.edu_box{
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    padding: 10%;
+}
+
+.edu_box h3 {
+    margin: 0;
+    font-size: 1.2rem;
+    color: #486a8d;
+}
+
+.edu_year {
+    font-size: 0.95rem;
+    font-weight: bold;
+    color: #555;
+    display: block;
+    margin-bottom: 0.4rem;
 }
 
 

@@ -13,8 +13,9 @@ html{
 body{
     line-height: 1.5;
     color: #333;
-    background: linear-gradient(145deg, rgba(255, 255, 255, 0.945) 0%, rgb(200, 228, 242) 100%);
     position: relative;
+    background: linear-gradient(145deg, rgba(255, 255, 255, 0.945) 0%, rgb(200, 228, 242) 100%);
+    background-attachment: fixed;
 }
 
 .navbar{
@@ -624,3 +625,110 @@ body{
         flex: 1 1 100%;
     }
 }
+
+.projects {
+    padding: 10%;
+}
+
+.section_title {
+    text-align: center;
+    font-size: 2.2em;
+    margin-bottom: 40px;
+    color: #333;
+}
+
+.project_container {
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: space-between;
+    gap: 30px;
+}
+
+.project_card {
+    display: flex;
+    flex-direction: row;
+    background-color: #ffffff;
+    justify-content: center;
+    align-items: center;
+    box-shadow: 0 4px 16px rgba(66, 66, 66, 0.08);
+    border-radius: 12px;
+    overflow: hidden;
+    transition: transform 0.3s ease;
+    width: calc(50% - 20px);
+    min-height: 200px;
+}
+
+.project_card:hover {
+    transform: translateY(-5px);
+}
+
+.project_image {
+    width: 40%;
+    height: 90%;
+    display: flex;
+    padding: 10px;
+    justify-content: center;
+    align-items: center;
+    overflow: hidden;
+    /*border: #365b76 solid;*/
+}
+
+.project_image img {
+    width: 100%;
+    height: 100%;
+    object-fit: fill;
+    display: block;
+}
+
+.project_content {
+    padding: 30px;
+    width: 55%;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    position: relative;
+}
+
+.project_content h3 {
+    font-size: 1.5em;
+    color: #222;
+    margin-bottom: 10px;
+}
+
+.project_content p {
+    color: #555;
+    font-size: 1em;
+    line-height: 1.5;
+    margin-bottom: 20px;
+}
+
+.github_icon {
+    position: absolute;
+    bottom: 30px;
+    right: 30px;
+    font-size: 1.6em;
+    color: #000;
+    text-decoration: none;
+    transition: color 0.3s ease;
+}
+
+.github_icon:hover {
+    color: #007acc;
+}
+
+@media (max-width: 992px) {
+    .project_card {
+        width: 100%;
+        flex-direction: column;
+    }
+
+    .project_image, .project_content {
+        width: 100%;
+    }
+
+    .github_icon {
+        position: static;
+        margin-top: auto;
+    }
+}
+

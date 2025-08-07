@@ -732,3 +732,67 @@ body{
     }
 }
 
+.problem_solving {
+    padding: 60px 20px;
+}
+
+.section_title {
+    text-align: center;
+    font-size: 2.2em;
+    margin-bottom: 40px;
+    color: #333;
+}
+
+.problem_solving_container {
+    display: grid;
+    grid-template-columns: repeat(auto-fit, minmax(280px, 1fr));
+    gap: 30px;
+}
+
+.judge_card {
+    display: flex;
+    align-items: center;
+    padding: 20px;
+    background-color: #fff;
+    border-radius: 12px;
+    box-shadow: 0 4px 16px rgba(0, 0, 0, 0.08);
+    transition: transform 0.3s ease;
+}
+
+.judge_card:hover {
+    transform: translateY(-5px);
+}
+
+.judge_icon {
+    font-size: 2.4rem;
+    margin-right: 20px;
+}
+
+.judge_icon a {
+    color: inherit;
+    text-decoration: none;
+    transition: color 0.3s ease;
+}
+
+.judge_icon a:hover {
+    color: #007acc;
+}
+
+.codeforces i { color: #1f8acb; }
+.leetcode i   { color: #f89f1b; }
+.codechef i   { color: #5b4638; }
+.uva i        { color: #e40d5c; }
+.cses i       { color: #00796b; }
+
+.judge_info h3 {
+    margin: 0;
+    font-size: 1.3em;
+    color: #222;
+}
+
+.judge_info p {
+    margin: 5px 0 0;
+    color: #555;
+    font-size: 0.95em;
+}
+

@@ -627,7 +627,8 @@ body{
 }
 
 .projects {
-    padding: 10%;
+    padding-left: 10%;
+    padding-right: 10%;
 }
 
 .section_title {
@@ -732,8 +733,88 @@ body{
     }
 }
 
+.achievements {
+    padding: 10%;
+}
+
+.section_title {
+    text-align: center;
+    font-size: 2.2em;
+    margin-bottom: 40px;
+    color: #333;
+}
+
+.achievements_container {
+    display: grid;
+    grid-template-columns: repeat(auto-fit, minmax(320px, 1fr));
+    gap: 30px;
+}
+
+.achievement_card {
+    display: flex;
+    background-color: #fff;
+    border-radius: 12px;
+    overflow: hidden;
+    box-shadow: 0 4px 16px rgba(0, 0, 0, 0.08);
+    transition: transform 0.3s ease;
+}
+
+.achievement_card:hover {
+    transform: translateY(-5px);
+}
+
+.achievement_image {
+    width: 40%;
+    min-width: 130px;
+    max-height: 280px;
+    overflow: hidden;
+    border-right: 1px solid #ddd;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    background-color: #fafafa;
+    padding: 5%;
+}
+
+.achievement_image img {
+    width: 100%;
+    height: auto;
+    object-fit: cover;
+    border-radius: 8px;
+    box-shadow: 0 2px 6px rgba(0, 0, 0, 0.1);
+}
+
+.achievement_content {
+    padding: 20px;
+    flex: 1;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+}
+
+.achievement_content h3 {
+    font-size: 1.4em;
+    margin: 0 0 10px;
+    color: #222;
+}
+
+.position {
+    font-weight: 600;
+    color: #007acc;
+    margin-bottom: 10px;
+    display: inline-block;
+}
+
+.achievement_content p {
+    font-size: 0.95em;
+    color: #555;
+    margin: 0;
+}
+
+
 .problem_solving {
-    padding: 60px 20px;
+    padding-left: 10%;
+    padding-right: 10%;
 }
 
 .section_title {
@@ -795,4 +876,3 @@ body{
     color: #555;
     font-size: 0.95em;
 }
-

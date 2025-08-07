@@ -46,7 +46,7 @@
                     <a href="#contact" class="contact_btn">
                         Contact me<i class="fas fa-envelope"></i>
                     </a>
-                    <a href="#contact" class="download_cv">
+                    <a href="assets/hridoy_cv.pdf" class="download_cv">
                         Download CV<i class="fas fa-download"></i>
                     </a>
                 </div>
@@ -384,19 +384,17 @@
             <div class="contact_right">
                 <div class="form_box">
                     <h2>Send a Message</h2>
-                    <form>
-                        <input type="text" name="name" placeholder="Your Name" required>
-                        <input type="email" name="email" placeholder="Your Email" required>
-                        <textarea name="message" rows="5" placeholder="Your Message" required></textarea>
+                    <form id="contactForm">
+                        <input type="text" name="name" id="name" placeholder="Your Name" required>
+                        <input type="email" name="email" id="email" placeholder="Your Email" required>
+                        <textarea name="message" id="message" rows="5" placeholder="Your Message" required></textarea>
                         <button type="submit">Send</button>
                     </form>
+
                 </div>
             </div>
         </div>
     </div>
-
-
-
-
+    <script src="script.js"></script>
 </body>
 </html>
